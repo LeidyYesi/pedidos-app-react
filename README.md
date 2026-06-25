@@ -1,16 +1,70 @@
-# React + Vite
+# 📦 Pedidos App React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación desarrollada en React para la gestión de pedidos.  
+Permite crear, editar y eliminar pedidos de forma dinámica, con persistencia en el navegador mediante localStorage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Funcionalidades
 
-## React Compiler
+- ➕ Agregar pedidos
+- ✏️ Editar cantidad de pedidos
+- ❌ Eliminar pedidos
+- 💾 Persistencia de datos con localStorage
+- 🔁 Actualización automática de la interfaz con React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Conceptos aplicados
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este proyecto fue creado con el objetivo de practicar:
+
+- useState
+- useEffect
+- Props
+- Manejo de eventos
+- Renderizado de listas con map()
+- Comunicación entre componentes (padre → hijo y hijo → padre)
+
+---
+
+## 🧩 Tecnologías
+
+- React
+- JavaScript (ES6+)
+- CSS básico
+- Vite
+
+---
+
+## 📸 Vista previa
+
+_
+
+---
+
+## 📂 Estructura del proyecto
+src/
+├── components/
+│ ├── PedidoCard.jsx
+│ ├── PedidoForm.jsx
+├── ListaPedidos.jsx
+├── App.jsx
+
+
+---
+
+## 💡 Aprendizaje principal
+
+Este proyecto me permitió entender cómo fluye la información en React:
+
+- El estado vive en el componente padre
+- Los datos se pasan mediante props
+- Los eventos suben del hijo al padre
+- useEffect permite sincronizar datos con el navegador
+
+---
+
+## 📌 Autor
+
+Proyecto realizado como parte de aprendizaje de React.
