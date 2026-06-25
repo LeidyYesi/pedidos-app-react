@@ -1,5 +1,3 @@
-//Componente que muestra datos
-
 function PedidoCard({
   cliente,
   producto,
@@ -9,29 +7,25 @@ function PedidoCard({
   onEditarCantidad
 }) {
   return (
-    <div>
-      <p>{cliente} pidió {cantidad} {producto}</p>
+    <div className="card">
+      <h3>{cliente}</h3>
 
-      <button onClick={onAumentar}>
-        +1
-      </button>
+      <p>{producto}</p>
 
-      <button onClick={onEliminar}>
-        Eliminar
-      </button>
+      <p>Cantidad: {cantidad}</p>
 
       <input
         type="number"
         value={cantidad}
-        onChange={(e) => {
-          console.log("Nuevo valor:", e.target.value);
-          onEditarCantidad(Number(e.target.value));
-        }}
+        onChange={(e) =>
+          onEditarCantidad(Number(e.target.value))
+        }
       />
 
-
-
-
+      <div>
+        <button onClick={onAumentar}>+1</button>
+        <button onClick={onEliminar}>Eliminar</button>
+      </div>
     </div>
   );
 }

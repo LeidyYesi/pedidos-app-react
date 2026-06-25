@@ -66,8 +66,8 @@ function ListaPedidos() {
   
 
   return (
-    <div>
-      <h2>Pedidos</h2>
+    <div className="dashboard">
+      <h1>Pedidos</h1>
 
       <PedidoForm
         cliente={cliente}
@@ -78,7 +78,7 @@ function ListaPedidos() {
         setCantidad={setCantidad}
         onAgregar={agregarPedido}
       />
-
+<div className="grid">
       {pedidos.map(pedido => (
         <PedidoCard
           key={pedido.id}
@@ -89,11 +89,10 @@ function ListaPedidos() {
           onEliminar={() => eliminarPedido(pedido.id)}
           onEditarCantidad={(valor) =>
             editarCantidad(pedido.id, valor)}
-            
-        />
+         />
       
       ))}
-
+</div>
 
     </div>
   );

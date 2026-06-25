@@ -10,7 +10,7 @@ function PedidoForm({
   onAgregar
 }) {
   return (
-    <div>
+    <div className="form">
       <input
         placeholder="Cliente"
         value={cliente}
