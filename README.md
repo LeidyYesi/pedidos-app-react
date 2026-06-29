@@ -64,6 +64,24 @@ Este proyecto me permitió entender cómo fluye la información en React:
 - useEffect permite sincronizar datos con el navegador
 
 ---
+## Avances
+
+### Dashboard de Pedidos
+
+Funcionalidades implementadas hasta el momento:
+
+- Estructura del proyecto con componentes reutilizables.
+- Lista de pedidos.
+- Formulario controlado con React.
+- Manejo de estado mediante `useState`.
+- Inputs controlados (`value` y `onChange`).
+- Manejo del envío del formulario con `onSubmit` y `preventDefault()`.
+
+### Próximos pasos
+
+- Agregar nuevos pedidos dinámicamente.
+- Limpiar el formulario después del envío.
+- Consumir pedidos desde una API utilizando `useEffect` y `fetch`.
 
 ## 📌 Autor
 
