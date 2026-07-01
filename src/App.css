@@ -4,17 +4,20 @@ body {
   margin: 0;
 }
 
-h1 {
-  text-align: center;
-  padding: 20px;
+
+h1{
+   font-size: 40px;
+  text-align: left;
+  padding: 10px;
   color: #5c422b;
 }
 
 .dashboard {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
+
 
 .card {
   background: rgb(186, 108, 56);
@@ -67,7 +70,15 @@ button:last-of-type {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
+
+.form button{
+  padding: 20px;
+  height: 50;
+
+}
+
 
 input {
   padding: 8px;
@@ -76,7 +87,7 @@ input {
 }
 
 button {
-  padding: 8px 12px;
+  padding: 10px 12px;
   border: none;
   border-radius: 6px;
   cursor: pointer;

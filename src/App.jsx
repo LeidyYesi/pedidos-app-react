@@ -1,18 +1,14 @@
 import './App.css';
-
+import Header from './components/Header.jsx';
 import ListaPedidos from "./ListaPedidos";
 
-
-
 function App() {
-  
   return (
     <div>
-      <h1>Dashboard de Pedidos</h1>
+      <Header />
       <ListaPedidos />
     </div>
   );
 }
-
 
 export default App;

@@ -66,22 +66,23 @@ Este proyecto me permitió entender cómo fluye la información en React:
 ---
 ## Avances
 
-### Dashboard de Pedidos
+## ✅ Funcionalidades implementadas
 
-Funcionalidades implementadas hasta el momento:
-
-- Estructura del proyecto con componentes reutilizables.
-- Lista de pedidos.
+- Dashboard de pedidos.
+- Componentes reutilizables.
+- Tarjetas de pedidos.
 - Formulario controlado con React.
-- Manejo de estado mediante `useState`.
-- Inputs controlados (`value` y `onChange`).
-- Manejo del envío del formulario con `onSubmit` y `preventDefault()`.
+- Agregar pedidos dinámicamente.
+- Actualización automática de la interfaz.
+- Incrementar cantidad de pedidos.
+- Eliminar pedidos.
+- Diseño personalizado para mi emprendimiento.
 
-### Próximos pasos
+## 🚧 Próximas mejoras
 
-- Agregar nuevos pedidos dinámicamente.
-- Limpiar el formulario después del envío.
-- Consumir pedidos desde una API utilizando `useEffect` y `fetch`.
+- Incorporar el logo del emprendimiento.
+- Consumir pedidos desde una API utilizando `fetch`.
+- Utilizar `useEffect` para cargar datos.
 
 ## 📌 Autor
 
