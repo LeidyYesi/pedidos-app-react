@@ -8,7 +8,7 @@ El proyecto permite registrar pedidos, editar cantidades, aumentar unidades y el
 
 ## 📸 Vista previa
 
-![Vista previa de Colitas de Hilo](images/Proyecto_ColitasDeHilo.jpeg)
+![Vista previa de Colitas de Hilo](Images/Proyecto_ColitasDeHilo.jpeg)
 
 ---
 
