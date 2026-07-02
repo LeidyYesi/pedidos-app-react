@@ -16,6 +16,7 @@ function PedidoCard({
 
       <input
         type="number"
+        min="1"
         value={cantidad}
         onChange={(e) =>
           onEditarCantidad(Number(e.target.value))

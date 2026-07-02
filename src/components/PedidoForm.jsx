@@ -1,4 +1,4 @@
-//Componente que crea datos
+// Formulario para crear nuevos pedidos
 
 function PedidoForm({
   cliente,
@@ -34,7 +34,7 @@ function PedidoForm({
         Agregar pedido
       </button>
 
-      
+
     </div>
   );
 }

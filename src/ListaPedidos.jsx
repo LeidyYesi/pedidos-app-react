@@ -1,4 +1,4 @@
-//Componente que  maneja estado
+// Componente principal que administra el estado de los pedidos
 
 import { useState, useEffect } from "react";
 import PedidoCard from "./components/PedidoCard";
@@ -24,6 +24,7 @@ function ListaPedidos() {
   }, [pedidos]);
 
   function agregarPedido() {
+    if (!cliente.trim() || !producto.trim()) return;
     const nuevoPedido = {
       id: Date.now(),
       cliente,
@@ -63,7 +64,7 @@ function ListaPedidos() {
       )
     );
   }
-  
+
 
   return (
     <div className="dashboard">
@@ -78,21 +79,25 @@ function ListaPedidos() {
         setCantidad={setCantidad}
         onAgregar={agregarPedido}
       />
-<div className="grid">
-      {pedidos.map(pedido => (
-        <PedidoCard
-          key={pedido.id}
-          cliente={pedido.cliente}
-          producto={pedido.producto}
-          cantidad={pedido.cantidad}
-          onAumentar={() => aumentarCantidad(pedido.id)}
-          onEliminar={() => eliminarPedido(pedido.id)}
-          onEditarCantidad={(valor) =>
-            editarCantidad(pedido.id, valor)}
-         />
-      
-      ))}
-</div>
+      <div className="grid">
+
+        {pedidos.length === 0 ? (
+          <p>No hay pedidos cargados.</p>
+        ) : pedidos.map((pedido) => (
+          <PedidoCard
+            key={pedido.id}
+            cliente={pedido.cliente}
+            producto={pedido.producto}
+            cantidad={pedido.cantidad}
+            onAumentar={() => aumentarCantidad(pedido.id)}
+            onEliminar={() => eliminarPedido(pedido.id)}
+            onEditarCantidad={(valor) =>
+              editarCantidad(pedido.id, valor)}
+
+          />
+
+        ))}
+      </div>
 
     </div>
   );
